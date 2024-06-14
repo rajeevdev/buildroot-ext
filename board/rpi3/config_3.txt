@@ -7,7 +7,7 @@
 start_file=start.elf
 fixup_file=fixup.dat
 
-kernel=Image
+kernel=zImage
 
 # To use an external initramfs file
 #initramfs rootfs.cpio.gz
@@ -27,9 +27,6 @@ dtoverlay=miniuart-bt
 
 # enable autoprobing of Bluetooth driver without need of hciattach/btattach
 dtparam=krnbt=on
-
-# enable 64bits support
-arm_64bit=1
 
 # disable_splash=1
 
