@@ -1,0 +1,7 @@
+config BR2_PACKAGE_QT_EGUI
+	bool "Qt Embedded GUI"
+	default n
+    depends on BR2_PACKAGE_QT5
+    help
+        This is the Qt Embedded GUI application.
+ 

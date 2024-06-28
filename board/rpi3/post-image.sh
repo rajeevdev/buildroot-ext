@@ -7,6 +7,10 @@ BOARD_NAME="$(basename ${BOARD_DIR})"
 GENIMAGE_CFG="${BOARD_DIR}/genimage-${BOARD_NAME}.cfg"
 GENIMAGE_TMP="${BUILD_DIR}/genimage.tmp"
 
+# cp "$BOARD_DIR/rootfs_overlay/etc/wpa_supplicant.conf" "$TARGET_DIR/etc/wpa_supplicant.conf"
+# cp "$BOARD_DIR/rootfs_overlay/etc/network/interfaces" "$TARGET_DIR/etc/network/interfaces"
+
+
 # generate genimage from template if a board specific variant doesn't exists
 if [ ! -e "${GENIMAGE_CFG}" ]; then
 	GENIMAGE_CFG="${BINARIES_DIR}/genimage.cfg"
